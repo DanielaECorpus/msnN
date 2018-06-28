@@ -1,3 +1,58 @@
-<p>
-  conversation works!
-</p>
+<div class="cssCon" style="height: 605px;">
+<div class="row" style="margin:0;">
+    <div class="col-md-2" style="margin-top: 20px;">
+        <div class="cssDivI">
+            <img src="/assets/img/logo_live_online.png" class="cssImg" >
+          </div>
+          <div class="cssDivI2">
+              <img src="/assets/img/persona.png" class="cssImg2" >
+          </div>
+    </div>
+    <div class="col-md-10" style="margin-top: 20px;">
+      <h2> Daniela <small>(online)</small></h2>
+      <hr>
+      <small>Any envía:</small>
+      <div>
+        <img src="/assets/img/gatos.jpeg" class="cssImg3">
+      </div>
+    <p class="cssP"> <small>Daniela dice:</small></p>
+   <p  class="cssP"> <small> jaja</small></p>
+   <p  class="cssP"> <small>Daniela dice:</small></p>
+   <p  class="cssP"> <small> Hola ;)</small></p>
+   <div style="display: grid;">
+      <textarea class="cssTArea" cols="30" rows="10"></textarea>
+      <div class="cssDivT  row ">
+
+          <!--<button *ngFor="let i of iconos" type="button" class="btn btn-outline-secondary mr-2" placement="top"
+          ngbPopover="{{i}}" popoverTitle="Popover on top">
+           Popover on top
+           </button>-->
+         <div class="col-md-1 dropdown" style="margin-left: 20px;padding: 0">
+              <button style="height: 35px;margin-top: 5px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="{{iconos[0]}}">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#" *ngFor="let i of iconos">
+                  <img src="{{i}}"></a>
+              </div>
+            </div>
+
+            <div class="col-md-1 dropdown" style="margin-left: 20px;padding: 0;margin: 0">
+                <button style="height: 35px;margin-top: 5px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="{{iconos[0]}}">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#" *ngFor="let i of iconos">
+                    <img src="{{i}}"></a>
+                </div>
+              </div>
+            <div class="col-md-1" style="padding: 0;margin: 0">
+                <img src="/assets/img/zumbido.png" class="cssZum">
+            </div>
+            <input type="file" class="cssBtn">
+            <button class="cssBtn"><i class="fas fa-image"></i> Seleccionar Imagen</button>
+      </div>
+    </div>
+    </div>
+</div>
+</div>

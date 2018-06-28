@@ -14,6 +14,9 @@ export class ConversationComponent implements OnInit {
   //variable objeto para el amigo
   friend={};
 
+  //recibir el arreglo del servicio
+  iconos:any;
+
   constructor(
     public activateRoute:ActivatedRoute,
     public userService:UserService
@@ -26,6 +29,9 @@ export class ConversationComponent implements OnInit {
     //asignamos a la variable friend la busqueda por id (la cual retorna el objeto con ese id )
     this.friend=userService.getUserById(this.userId);
     console.log(this.friend);
+
+    this.iconos=userService.getIconos();
+   // console.log(this.iconos);
   }
 
   ngOnInit() {

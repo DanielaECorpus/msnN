@@ -1,0 +1,56 @@
+<!--<div class="container">
+  
+    <h1>Registro</h1>
+    <div>
+    Name:<input [(ngModel)]="nombreUser" type="text" placeholder="Name" >
+  </div>
+  <div>
+    Nick:<input [(ngModel)]="nickUser" type="text" placeholder="Nick" >
+  </div>
+  <div>
+    SubNick:<input [(ngModel)]="subNickUser" type="text" placeholder="Subnick" >
+  </div>
+  <div>
+    Email:<input [(ngModel)]="emailUser" type="email" placeholder="Email"> 
+  </div>
+  <div>
+    Status:<input [(ngModel)]="statusUser" type="text" placeholder="Status" >
+  </div>
+  <div>
+    Avatar:<input [(ngModel)]="avatarUser" type="text" placeholder="Avatar" >
+  </div>
+  <div>
+    <button (click)="addUser()">Add User</button>
+  </div>
+
+</div>-->
+
+
+<div class="container">
+    <div class="form-group">
+        <label>Name</label>
+        <input [(ngModel)]="nombreUser" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+      </div>
+      <div class="form-group">
+          <label>Nick</label>
+          <input [(ngModel)]="nickUser" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nick">
+        </div>
+        <div class="form-group">
+            <label>SubNick</label>
+            <input [(ngModel)]="subNickUser" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="SubNick">
+          </div>
+    <div class="form-group">
+      <label>Email address</label>
+      <input [(ngModel)]="emailUser" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <input [(ngModel)]="statusUser" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Status">
+      </div>
+      <div class="form-group">
+          <label>Avatar</label>
+          <input [(ngModel)]="avatarUser" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Avatar">
+        </div>
+    <button (click)="addUser()" class="btn btn-primary">Add User</button>
+  </div>

@@ -1,0 +1,15 @@
+.cssNavbar{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #7abcff 61%, #7abcff 61%, #7abcff 61%, #7abcff 61%, #4096ee 83%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#7abcff 61%,#7abcff 61%,#7abcff 61%,#7abcff 61%,#4096ee 83%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#7abcff 61%,#7abcff 61%,#7abcff 61%,#7abcff 61%,#4096ee 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+    
+    }
+
+    .aNav {
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }

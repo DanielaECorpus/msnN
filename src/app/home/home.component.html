@@ -2,33 +2,16 @@
   creamos una lista con el arreglo y mandamos su id cuando se le hace clic al elemento
   <li routerLink="/conversation/{{user.userId}}" *ngFor="let user of users">{{user.nick}}</li>
 </ul>-->
-<nav class=" navbar navbar-expand-lg cssNavbar">
-    <a class="navbar-brand" href="#">
-        <img src="assets/img/logo_live2.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        MSN Alive!
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Configuración<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Acerca De<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   
-    <div class="cssDiv">
+    <div class="row cssDiv">
       <div class="cssDivI">
         <img src="/assets/img/logo_live_online.png" class="cssImg" >
       </div>
-      
+      <div class="col-md-1">
+        <p>{{users[0].nick}}</p>
+        <p>{{users[0].subNick}}</p>
+      </div>
 
     </div>
     <hr class="cssHr">
@@ -37,9 +20,35 @@
     <img src="/assets/img/logo_live_add.png" class="cssIconoMas">
   </div>
   <hr>
-    <ul>
+
+ <!--<div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>-->
+
+  <div class="dropdown" style="margin-left: 20px;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Amigos (11/11)
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item texto" href="#" *ngFor="let user of users">
+          <img src="/assets/img/logo_live_online.png" class="cssImgL">
+          {{user.nick +' - '}}<p class="cssP">{{user.subNick}}</p> </a>
+      </div>
+    </div>
+
+<ul class="list-unstyled" style="margin-left: 10px;margin-top: 10px">
        <!-- creamos una lista con el arreglo y mandamos su id cuando se le hace clic al elemento-->
-        <li routerLink="/conversation/{{user.userId}}" *ngFor="let user of users">{{user.nick}}</li>
-    </ul>
+       <li routerLink="/conversation/{{user.userId}}" *ngFor="let user of usersFireB" class="texto">
+        <!--<i class="fa-li fa fa-check-square" style="margin-left: 40px;"></i>-->
+          <img src="/assets/img/logo_live_online.png" class="cssImgL">
+          {{user.nick +'  -  '}} <p class="cssP">{{ user.subNick}}</p></li>
+</ul>
   
  

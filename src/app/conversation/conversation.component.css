@@ -1,0 +1,75 @@
+.cssCon{
+   /* background:linear-gradient(left , blue, 40%, white, 60%);*/
+    background: rgba(183,222,237,1);
+background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 2%, rgba(113,206,239,1) 20%, rgba(183,222,237,1) 32%, rgba(183,222,237,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(2%, rgba(33,180,226,1)), color-stop(20%, rgba(113,206,239,1)), color-stop(32%, rgba(183,222,237,1)), color-stop(100%, rgba(183,222,237,1)));
+background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 2%, rgba(113,206,239,1) 20%, rgba(183,222,237,1) 32%, rgba(183,222,237,1) 100%);
+background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 2%, rgba(113,206,239,1) 20%, rgba(183,222,237,1) 32%, rgba(183,222,237,1) 100%);
+background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 2%, rgba(113,206,239,1) 20%, rgba(183,222,237,1) 32%, rgba(183,222,237,1) 100%);
+background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 2%, rgba(113,206,239,1) 20%, rgba(183,222,237,1) 32%, rgba(183,222,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0 );
+
+}
+
+
+.cssDivI[_ngcontent-c1] {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 4px solid greenyellow;
+    border-radius: .25rem;
+    background-color: rgb(113, 255, 47);
+}
+
+.cssDivI2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 6px solid rgba(255, 130, 47, 0.74);
+    border-radius: .25rem;
+    margin-top: 270px;
+}
+
+
+.cssImg{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+
+}
+
+.cssImg2{
+    width: 100%;
+    height: 100%;   
+}
+
+.cssImg3{
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+.cssP{
+    margin: 0;
+}
+
+.cssTArea{
+    width: 90%;
+    height: 80px;
+}
+.cssDivT{
+    background-color: gainsboro;
+    height: 45px;
+    width: 90%;
+    border: .1px solid gray;
+    margin-left: 0px;
+}
+.cssZum{
+    width: 45px;
+    height: 30px;
+    margin-top: 8px;
+}
+
+.cssBtn{
+    height: 35px;
+    margin-top: 5px;
+}
